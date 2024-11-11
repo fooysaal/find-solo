@@ -1,5 +1,22 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import Aura from '@primevue/themes/aura';
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
-  devtools: { enabled: true }
+  modules: [
+      '@primevue/nuxt-module',
+      '@nuxtjs/tailwindcss'
+  ],
+
+  primevue: {
+      /* Configuration */
+      options: {
+        theme: {
+            preset: Aura
+        }
+    }
+  },
+
+  css: [
+   '@/assets/css/tailwind.css'
+  ],
+
+  compatibilityDate: '2024-11-03',
 })
