@@ -4,10 +4,10 @@
       <div class="container mx-auto flex p-4 justify-between">
         <CommonLogo class="h-[40px]" />
         <div>
-          <NuxtLink to="/login">
+          <NuxtLink to="/auth/login">
             <Button size="small" class="mr-4" text label="Sign In" />
           </NuxtLink>
-          <NuxtLink to="/register">
+          <NuxtLink to="/auth/register">
             <Button size="small" label="Sign up" />
           </NuxtLink>
         </div>

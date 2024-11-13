@@ -4,7 +4,7 @@ import {Prisma, PrismaClient, User} from "@prisma/client";
 
 class UserRepository {
  constructor(private readonly prisma: PrismaClient) {}
- async createUser(userData: Pick<User, "email" | "password" | "name">) {
+ async createUser(userData: Pick<User, "email" | "password" | "name" | "acceptTerms">) {
   try {
    return await this.prisma.user.create({
     data: userData,
@@ -28,6 +28,14 @@ class UserRepository {
     statusMessage: 'Unknown prisma error.'
    })
   }
+ }
+
+ async getUserByEmail(email: string) {
+  return await this.prisma.user.findUnique({
+   where: {
+    email: email
+   }
+  });
  }
 }
 
