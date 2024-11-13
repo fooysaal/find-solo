@@ -6,12 +6,12 @@
           class=" bg-gradient-to-tl from-blue-700 to-violet-800 absolute top-0 left-0 w-full h-full z-0 opacity-80"></div>
       <div class="flex flex-col gap-4 grow items-center justify-center relative z-2 text-white">
         <h2 class="text-xl md:text-2xl font-bold">
-          Already have an account?
+          Don't have an account?
         </h2>
-        <p class="text-sm md:text-md">Sign in and continue your experience</p>
+        <p class="text-sm md:text-md">Sign up and share your experience</p>
         <Button
             class="border-white text-white text-sm md:text-md min-w-[130px] justify-center h-[48px]" outlined >Sign
-          in</Button>
+          up</Button>
       </div>
       <p class="grow-0 text-[12px] mt-4 relative z-2 text-white ">Need Help?
         <NuxtLink>find-solo@suppport.com</NuxtLink></p>
